@@ -31,7 +31,7 @@
 }
 
 .logo-text {
-  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -52,7 +52,7 @@
 }
 
 .nav-link:hover {
-  color: #ff7a00;
+  color: #667eea;
 }
 
 .user-menu {
@@ -83,20 +83,22 @@
 }
 
 .login-btn {
-  color: #ff7a00;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
   text-decoration: none;
   font-weight: 500;
   padding: 8px 16px;
   border-radius: 6px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .login-btn:hover {
-  background: #f8f9ff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102,126,234,0.3);
 }
 
 .register-btn {
-  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   text-decoration: none;
   padding: 8px 20px;
@@ -107,7 +109,7 @@
 
 .register-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255,122,0,0.3);
+  box-shadow: 0 5px 15px rgba(102,126,234,0.3);
 }
 
 @media (max-width: 768px) {

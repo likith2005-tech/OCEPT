@@ -1,6 +1,7 @@
 .registration-page {
   min-height: 100vh;
-  background: #000;
+  background: var(--bg);
+  color: var(--text);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -35,7 +36,7 @@
   color: #2c3e50;
   font-size: 2.2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -103,9 +104,9 @@
 .registration-page input:focus,
 .registration-page select:focus {
   outline: none;
-  border-color: #667eea;
-  background: white;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
   transform: translateY(-1px);
 }
 
@@ -240,7 +241,7 @@ select option:checked {
 
 .registration-page button:hover:not(:disabled) {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 25px rgba(102,126,234,0.3);
 }
 
 .registration-page button:active {
@@ -518,8 +519,8 @@ select option:checked {
   
   .registration-page input:focus,
   .registration-page select:focus {
-    background: #4a5568;
-    border-color: #667eea;
+  background: #4a5568;
+  border-color: #667eea;
   }
   
   .registration-page input::placeholder {

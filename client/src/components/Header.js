@@ -44,9 +44,9 @@ const Header = () => {
         </Link>
 
         <nav className="nav">
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/courses" className="nav-link">Courses</Link>
-          <Link to="/contact" className="nav-link">Contact</Link>
+          <Link to="/" className="register-btn">Home</Link>
+          <Link to="/courses" className="login-btn">Courses</Link>
+          <Link to="/contact" className="login-btn">Contact</Link>
           
           {user ? (
             <div className="user-menu">

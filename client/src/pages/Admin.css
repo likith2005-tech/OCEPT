@@ -1,6 +1,7 @@
 .admin-page {
   min-height: 100vh;
-  background: #000;
+  background: var(--bg);
+  color: var(--text);
   padding: 20px;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .stat-card {
-  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   padding: 1.5rem;
   border-radius: 10px;
@@ -58,8 +59,8 @@
 }
 
 .tab-btn.active {
-  color: #ff7a00;
-  border-bottom-color: #ff7a00;
+  color: #667eea;
+  border-bottom-color: #667eea;
 }
 
 .table-container {
@@ -94,7 +95,7 @@ th {
   background: #f8f9fa;
   padding: 1.5rem;
   border-radius: 10px;
-  border-left: 4px solid #ff7a00;
+  border-left: 4px solid #667eea;
 }
 
 .message-header {
@@ -122,7 +123,7 @@ th {
 }
 
 .message-email {
-  color: #ff7a00;
+  color: #667eea;
   font-size: 0.9rem;
 }
 
@@ -155,7 +156,7 @@ th {
 }
 
 .back-home a {
-  color: #ff7a00;
+  color: #667eea;
   text-decoration: none;
   font-weight: 600;
 }

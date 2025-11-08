@@ -1,6 +1,7 @@
 .user-dashboard {
   min-height: 100vh;
-  background: #000;
+  background: var(--bg);
+  color: var(--text);
   padding: 20px;
 }
 
@@ -124,7 +125,7 @@
 }
 
 .start-learning-btn {
-  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -140,7 +141,7 @@
 
 .start-learning-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 15px rgba(102,126,234,0.4);
   color: white;
   text-decoration: none;
 }
@@ -172,8 +173,8 @@
   cursor: pointer;
 }
 
-.action-btn:hover {
-  border-color: #667eea;
+  .action-btn:hover {
+    border-color: #667eea;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -208,7 +209,7 @@
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 15px rgba(102,126,234,0.4);
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,7 @@
 .course-learning {
   min-height: 100vh;
-  background: #000;
+  background: var(--bg);
+  color: var(--text);
   padding: 20px;
 }
 
@@ -18,7 +19,7 @@
 }
 
 .back-btn {
-  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   border: none;
   padding: 12px 24px;
@@ -30,19 +31,19 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 15px rgba(255,122,0,0.3);
+  box-shadow: 0 4px 15px rgba(102,126,234,0.3);
 }
 
 .back-btn:hover {
   transform: translateX(-5px);
-  box-shadow: 0 6px 20px rgba(255,122,0,0.4);
+  box-shadow: 0 6px 20px rgba(102,126,234,0.4);
 }
 
 .course-title-section h1 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -56,13 +57,13 @@
 }
 
 .progress-info {
-  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: 600;
   font-size: 14px;
-  box-shadow: 0 4px 15px rgba(255,122,0,0.3);
+  box-shadow: 0 4px 15px rgba(102,126,234,0.3);
 }
 
 .learning-layout {
@@ -91,7 +92,7 @@
   color: #2c3e50;
   font-size: 1.4rem;
   font-weight: 700;
-  border-bottom: 3px solid #ff7a00;
+  border-bottom: 3px solid #667eea;
   padding-bottom: 12px;
   text-align: center;
 }
@@ -116,17 +117,17 @@
 }
 
 .lesson-item:hover {
-  border-color: #ff7a00;
+  border-color: #667eea;
   background: linear-gradient(135deg, #f8f9ff, #f0f2ff);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255,122,0,0.15);
+  box-shadow: 0 8px 25px rgba(102,126,234,0.15);
 }
 
 .lesson-item.active {
-  border-color: #ff7a00;
-  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  border-color: #667eea;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  box-shadow: 0 8px 25px rgba(255,122,0,0.3);
+  box-shadow: 0 8px 25px rgba(102,126,234,0.3);
   transform: translateY(-2px);
 }
 
@@ -139,7 +140,7 @@
   font-size: 20px;
   margin-top: 2px;
   flex-shrink: 0;
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(102,126,234,0.08);
   padding: 8px;
   border-radius: 10px;
 }
@@ -191,8 +192,8 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.video-lesson h3,
-.text-lesson h3 {
+video-lesson h3,
+text-lesson h3 {
   color: #2c3e50;
   margin-bottom: 30px;
   font-size: 2rem;
@@ -372,9 +373,9 @@
 }
 
 .next-btn:not(:disabled):hover {
-  background: linear-gradient(135deg, #5a6fd8, #6b5b95);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   transform: translateX(5px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 6px 20px rgba(102,126,234,0.4);
 }
 
 .nav-btn:disabled {
@@ -423,12 +424,12 @@
   align-items: center;
   gap: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(102,126,234,0.3);
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(255,122,0,0.4);
 }
 
 .loading {
@@ -593,14 +594,13 @@
   }
   
   .nav-btn {
-    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     min-width: auto;
   }
-  
+
   .video-container iframe {
-    height: 300px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
   }
-  
   .text-content {
     font-size: 16px;
   }
