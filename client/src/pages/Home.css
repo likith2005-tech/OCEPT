@@ -1,0 +1,131 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #ffe0e9, #e0f7fa);
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-img {
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+/* Buttons */
+.btn {
+  background: #1abc9c;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #16a085;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fefefe;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature {
+  background: #f1f1f1;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+}
+
+.feature img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f0f4c3, #dcedc8);
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  border-left: 5px solid #1abc9c;
+  text-align: left;
+}
+
+.testimonial img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 14px;
+}

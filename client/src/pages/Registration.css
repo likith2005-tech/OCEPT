@@ -1,0 +1,565 @@
+.registration-page {
+  min-height: 100vh;
+  background: #000;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.registration-page .container {
+  max-width: 500px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.registration-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff7a00, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.existing-user-notice {
+  background: linear-gradient(135deg, #e8f4fd, #d1ecf1);
+  border: 2px solid #b3e0ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(179, 224, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(179, 224, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(179, 224, 255, 0);
+  }
+}
+
+.existing-user-notice span {
+  color: #2c3e50;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.existing-user-notice p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.registration-page label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.registration-page input,
+.registration-page select {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 5px;
+  border: 2px solid #e8ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+  box-sizing: border-box;
+}
+
+.registration-page input:focus,
+.registration-page select:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.registration-page input::placeholder {
+  color: #a0a0a0;
+}
+
+/* Style for course categories in dropdown */
+select {
+  background-image: 
+    linear-gradient(45deg, transparent 50%, #667eea 50%),
+    linear-gradient(135deg, #667eea 50%, transparent 50%);
+  background-position: 
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+select:focus {
+  background-image: 
+    linear-gradient(45deg, #667eea 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #667eea 50%);
+  background-position: 
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 20px) calc(1em + 2px);
+}
+
+/* Style optgroups and options */
+select optgroup {
+  font-weight: bold;
+  color: #2c3e50;
+  background: #f8f9fa;
+  padding: 8px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #e8ecef;
+}
+
+select optgroup option {
+  font-weight: normal;
+  padding: 10px 15px;
+  font-size: 14px;
+  background: white;
+  color: #2c3e50;
+  border: none;
+}
+
+select optgroup option:hover {
+  background: #667eea !important;
+  color: white !important;
+}
+
+select option {
+  padding: 12px 15px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+select option:hover {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+select option:checked {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e8ecef;
+  transition: all 0.3s ease;
+}
+
+.checkbox-label:hover {
+  background: #f0f2f5;
+  border-color: #667eea;
+}
+
+.checkbox-label input {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  margin-top: 0;
+  accent-color: #667eea;
+  cursor: pointer;
+}
+
+.registration-page button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.registration-page button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.registration-page button:hover::before {
+  left: 100%;
+}
+
+.registration-page button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.registration-page button:active {
+  transform: translateY(-1px);
+}
+
+.registration-page button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.registration-page .back-home {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #e8ecef;
+}
+
+.registration-page .back-home a {
+  color: #667eea;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.registration-page .back-home a:hover {
+  color: #764ba2;
+  background: #f8f9ff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.registration-page .back-home p {
+  margin: 12px 0;
+  color: #666;
+}
+
+.message {
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  animation: slideDown 0.4s ease;
+  border: 2px solid transparent;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message.success {
+  background: linear-gradient(135deg, #d4edda, #c3e6cb);
+  color: #155724;
+  border-color: #b1dfbb;
+  box-shadow: 0 4px 15px rgba(21, 87, 36, 0.1);
+}
+
+.message.error {
+  background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+  color: #721c24;
+  border-color: #f1b0b7;
+  box-shadow: 0 4px 15px rgba(114, 28, 36, 0.1);
+}
+
+/* Loading animation for button */
+.registration-page button:disabled::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  border: 2px solid transparent;
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Field focus animations */
+.form-group {
+  position: relative;
+}
+
+.form-group:focus-within label {
+  color: #667eea;
+  transform: translateY(-2px);
+}
+
+.form-group label {
+  transition: all 0.3s ease;
+}
+
+/* Password strength indicator */
+.password-strength {
+  margin-top: 5px;
+  height: 4px;
+  border-radius: 2px;
+  background: #e8ecef;
+  overflow: hidden;
+}
+
+.password-strength-fill {
+  height: 100%;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.password-strength.weak .password-strength-fill {
+  background: #e74c3c;
+  width: 33%;
+}
+
+.password-strength.medium .password-strength-fill {
+  background: #f39c12;
+  width: 66%;
+}
+
+.password-strength.strong .password-strength-fill {
+  background: #27ae60;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registration-page {
+    padding: 15px;
+  }
+  
+  .registration-page .container {
+    padding: 30px 25px;
+    margin: 10px;
+  }
+  
+  .registration-page h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  
+  .registration-page input,
+  .registration-page select {
+    padding: 12px 14px;
+  }
+  
+  .existing-user-notice {
+    padding: 15px;
+  }
+  
+  .existing-user-notice span {
+    font-size: 1rem;
+  }
+  
+  .registration-page .back-home a {
+    margin: 0 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .registration-page .container {
+    padding: 25px 20px;
+  }
+  
+  .registration-page h2 {
+    font-size: 1.6rem;
+  }
+  
+  .registration-page input,
+  .registration-page select {
+    padding: 11px 13px;
+    font-size: 15px;
+  }
+  
+  .registration-page button {
+    padding: 14px;
+    font-size: 15px;
+  }
+  
+  .checkbox-label {
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .message {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+  
+  .registration-page .back-home {
+    margin-top: 25px;
+    padding-top: 20px;
+  }
+  
+  .registration-page .back-home p {
+    margin: 8px 0;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .registration-page input,
+  .registration-page select {
+    border-width: 3px;
+  }
+  
+  .checkbox-label {
+    border-width: 3px;
+  }
+  
+  .message {
+    border-width: 3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .registration-page .container,
+  .message,
+  .registration-page input,
+  .registration-page select,
+  .registration-page button,
+  .checkbox-label {
+    animation: none;
+    transition: none;
+  }
+  
+  .registration-page button::before {
+    display: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .registration-page .container {
+    background: #2d3748;
+    color: #e2e8f0;
+  }
+  
+  .registration-page h2 {
+    color: #e2e8f0;
+  }
+  
+  .registration-page label {
+    color: #e2e8f0;
+  }
+  
+  .registration-page input,
+  .registration-page select {
+    background: #4a5568;
+    border-color: #718096;
+    color: #e2e8f0;
+  }
+  
+  .registration-page input:focus,
+  .registration-page select:focus {
+    background: #4a5568;
+    border-color: #667eea;
+  }
+  
+  .registration-page input::placeholder {
+    color: #a0aec0;
+  }
+  
+  .checkbox-label {
+    background: #4a5568;
+    border-color: #718096;
+    color: #e2e8f0;
+  }
+  
+  select optgroup {
+    background: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  select optgroup option {
+    background: #4a5568;
+    color: #e2e8f0;
+  }
+}
+
+/* Print styles */
+@media print {
+  .registration-page {
+    background: white !important;
+  }
+  
+  .registration-page .container {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  
+  .registration-page button {
+    background: #666 !important;
+    color: black !important;
+  }
+  
+  .existing-user-notice {
+    border: 1px solid #ccc;
+  }
+}
