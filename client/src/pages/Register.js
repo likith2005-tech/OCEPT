@@ -39,8 +39,8 @@ const Register = () => {
     }
 
     try {
-      // Call backend register endpoint
-      const res = await fetch('/api/auth/register', {
+      // Call backend register endpoint using base URI from environment
+      const res = await fetch(`${process.env.REACT_APP_BASE_URI}/api/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

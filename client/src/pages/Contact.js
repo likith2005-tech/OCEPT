@@ -21,8 +21,8 @@ const Contact = () => {
     e.preventDefault();
     
     try {
-      // Send data to backend API
-      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      // Send data to backend API using base URI from environment
+      const response = await axios.post(`${process.env.REACT_APP_BASE_URI}/api/contact`, formData);
       
       setMessage('✅ Thank you! Your message has been sent. We will get back to you within 24 hours.');
       setFormData({ name: '', email: '', message: '' });

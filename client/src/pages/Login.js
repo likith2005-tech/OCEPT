@@ -24,8 +24,8 @@ const Login = () => {
     setError('');
 
     try {
-      // Call backend login endpoint
-      const res = await fetch('/api/auth/login', {
+      // Call backend login endpoint using base URI from environment
+      const res = await fetch(`${process.env.REACT_APP_BASE_URI}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: formData.email, password: formData.password })
